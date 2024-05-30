@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todooler</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="border main-body josefin-sans-font flex f-c">
+
+        <aside class="border app-logo">
+            <img src="logo.jpg" alt="">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.019 12.0075C2.98744 10.7478 3.00692 9.5598 3.00692 8.56644C3.00692 4.22767 5.84954 2.95597 5.84954 2.95597C7.28286 2.29767 9.74238 2.0209 12.2993 2H12.3621C14.919 2.0209 17.3801 2.29767 18.8134 2.95597C18.8134 2.95597 21.656 4.22767 21.656 8.56644C21.656 8.56644 21.6916 11.7674 21.2596 13.9898C20.9852 15.4007 18.8034 16.9446 16.2974 17.2438C14.9906 17.3999 13.7042 17.5431 12.3322 17.4802C10.0885 17.3775 8.31815 16.9446 8.31815 16.9446C8.31815 17.1631 8.33166 17.3711 8.35853 17.5655C8.44182 18.1978 8.65659 18.6604 8.96296 19C9.72944 19.8497 11.0692 19.9301 12.3577 19.9743C14.178 20.0366 15.7986 19.5254 15.7986 19.5254L15.8735 21.1712C15.8735 21.1712 14.6003 21.8548 12.3322 21.9805C11.0815 22.0493 9.52858 21.9491 7.71969 21.4704C6.18802 21.065 5.15153 20.1804 4.45091 19C3.35714 17.1573 3.08191 14.5938 3.019 12.0075ZM6.31815 16.9446V14.3967L8.79316 15.0018C8.8405 15.0134 8.95098 15.0383 9.11692 15.0723C9.40521 15.1313 9.73416 15.1908 10.0959 15.2467C10.8485 15.3628 11.6341 15.4462 12.4237 15.4823C13.4425 15.529 14.3249 15.4652 16.0603 15.2579C17.7233 15.0594 19.208 14.0622 19.2963 13.6082C19.3783 13.1861 19.4472 12.6858 19.5021 12.1261C19.5714 11.4205 19.6155 10.6558 19.6388 9.88068C19.654 9.37026 19.6582 8.93648 19.6564 8.62452L19.656 8.56644C19.656 7.1368 19.2873 6.12756 18.6928 5.40793C18.5008 5.17553 18.3004 4.99408 18.1087 4.85958C18.0183 4.79617 17.9737 4.77136 17.9787 4.77345C16.9662 4.30844 14.8859 4.02069 12.3621 3.99993H12.3156C9.77596 4.02069 7.6969 4.30836 6.66627 4.78161C6.68919 4.77136 6.64459 4.79617 6.55423 4.85958C6.36257 4.99408 6.16214 5.17553 5.97016 5.40793C5.37568 6.12756 5.00692 7.1368 5.00692 8.56644C5.00692 8.7976 5.00628 8.96339 5.00392 9.44137C4.9981 10.6238 5.00004 11.2256 5.01841 11.9589C5.07185 14.156 5.2822 15.7941 5.71797 17C5.93023 17.5874 6.19005 18.0709 6.49741 18.4507C6.37791 18.0162 6.31815 17.5142 6.31815 16.9446ZM8.08576 6.37135C8.71735 6.37135 9.22924 6.88324 9.22924 7.51482C9.22924 8.14626 8.71735 8.6583 8.08576 8.6583C7.45432 8.6583 6.94229 8.14626 6.94229 7.51482C6.94229 6.88324 7.45432 6.37135 8.08576 6.37135Z"></path></svg> -->
+        </aside>
+
+        <div class="border util c-m flex">
+            <input type="text" id="input-task" placeholder="Add task">
+            <select name="" id="priority-level">
+                <option value="placeholder" selected disabled hidden >Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <!-- <button type="reset">Clear</button> -->
+            <svg class="clear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg>
+            <svg class="add" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+        </div>
+
+        <aside class="border profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H18C18 18.6863 15.3137 16 12 16C8.68629 16 6 18.6863 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"></path></svg>
+        </aside>
+
+        <div class="border flex task-count">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11.0026 16L6.75999 11.7574L8.17421 10.3431L11.0026 13.1716L16.6595 7.51472L18.0737 8.92893L11.0026 16Z"></path></svg>
+            Tasks Today : 0
+        </div>
+    
+        <div class="border container flex f-c">
+            
+            <!-- <div class="border task c-m flex">
+                <input type="checkbox" name="" id="">
+                <span class="border checkmark"></span>
+                <div class="border content">
+                    <p>This is my first task Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem fugit nulla laboriosam nobis, excepturi sunt incidunt veritatis tempore, temporibus officiis omnis eum blanditiis porro neque tenetur totam? Explicabo harum molestiae animi voluptatem incidunt qui. Rem, enim quibusdam. Dolorum, libero? Eveniet suscipit alias iste cum ullam dolorem fugiat ratione qui. sit amet consectetur adipisicing elit. Rerum officiis quaerat velit nihil libero, sequi ratione omnis dolores nemo molestias.</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5 18.89H6.41421L15.7279 9.57627L14.3137 8.16206L5 17.4758V18.89ZM21 20.89H3V16.6473L16.435 3.21231C16.8256 2.82179 17.4587 2.82179 17.8492 3.21231L20.6777 6.04074C21.0682 6.43126 21.0682 7.06443 20.6777 7.45495L9.24264 18.89H21V20.89ZM15.7279 6.74785L17.1421 8.16206L18.5563 6.74785L17.1421 5.33363L15.7279 6.74785Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8ZM6 10V20H18V10H6ZM9 12H11V18H9V12ZM13 12H15V18H13V12ZM7 5V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V5H22V7H2V5H7ZM9 4V5H15V4H9Z"></path></svg>
+            </div> -->
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

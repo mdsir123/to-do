@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .border{border: 2px solid black;} */
+
+.josefin-sans-font {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* margin-top: 10rem; */
+  }
+
+.flex{
+    display: flex;
+}
+
+.f-c{
+    flex-direction: column;
+}
+
+
+aside{
+    width: 3vw;
+    /* padding:0.5rem 1.3rem; */
+
+}
+
+aside img{
+    width: 100%;
+}
+
+.app-logo{
+    position: absolute;
+    top:5vh ;
+    left:3vw;
+}
+
+.profile{
+    height: 6vh;
+    width: 3vw;
+    
+    position: absolute;
+    right:3vw;
+    top: 7vh;
+    /* border-radius: 50%; */
+
+}
+
+.main-body{
+    align-items: center;
+    position: relative;
+}
+
+.c-m > *{
+    margin: 0 1vw;
+}
+
+.util{
+    height: 10vh;
+    width: 60vw;
+    margin: 2rem;
+    padding: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border: 2px solid #e55b97;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+
+.util input{
+    width: 70%;
+    padding: 0 1vw;
+}
+
+select{
+    border-style: none;
+}
+
+.task-count{
+    height: 4vh;
+    width: 50%;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.task-count >*{
+    margin-right: 5px;
+}
+
+.container{
+    width: 60vw;
+    min-height: 70vh;
+    margin-bottom: 2rem;
+    padding:1vh 5vw ;
+    /* border: 1px solid #6369b7; */
+    border-radius: 20px;
+    /* align-items: ; */
+    /* justify-content: center; */
+}
+
+.task{
+    margin: 0.6rem;
+    padding: 1.5vh 1vw;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 20px;
+    justify-content: center;
+    /* border: 2px solid #9656a4; */
+}
+
+.high-prior > *{
+    border: 2px solid red;
+}
+
+.med-prior > *{
+    border: 2px solid orange;
+}
+
+.low-prior > *{
+    border: 2px solid yellowgreen;
+}
+
+.task-done{
+    color: gray;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+.content{
+    width: 80%;
+    height: 3vh;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 4px;
+    overflow:hidden;
+}
+
+svg{
+    width: 1.5vw;
+}
+
+svg path{
+    pointer-events: none;
+}
